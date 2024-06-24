@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# EdTech Video Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a simple web application that allows users to create, comment on, and watch educational videos. The application is built using React and interacts with a provided backend API. As of now, the only type of videos that are supported are from Youtube and Vimeo.
 
-## Available Scripts
+There are two pages to this application, a home page and a video page. The home page has a list of videos and at the top there is a search functionality where you can search for the videos by title. This page is also where a user can upload a new video. On the video page, you will see a video player where you can watch the video, comment on the video, as well as see other users' comments. 
 
-In the project directory, you can run:
+## Features
+- Create a new video with title, description, and URL.
+- Search for videos by title
+- Watch videos in full screen with playback controls.
+- Comment on videos and view comments from other users.
 
-### `npm start`
+## Setup Instructions
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/adamkw66/edtech-video-app.git
+    cd edtech-video-app
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
-### `npm test`
+4. Create a `.env.local` file and add the variable `REACT_APP_USER_ID=adam_knox-warshaw`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Open `http://localhost:3000` in your browser to view the app.
 
-### `npm run build`
+## Screenshots
+![Home Page](public/home_page.png)
+![Video Page 1](public/video_page1.png)
+![Video Page 2](public/video_page2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API Integration
+The app integrates with a provided backend API for creating videos, fetching videos, and managing comments. The documentation can be found [here](https://take-home-assessment-423502.uc.r.appspot.com/docs)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Adam Knox-Warshaw
